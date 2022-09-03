@@ -5,9 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>Crud</title>
 </head>
 <body>
+    <div class="container">
+        <div class="header">
+            <span>Employee registration</span>
+            <button onclick="openModal()" id="new">Include</i></button>
+        </div>
+        
+    <div class="divTable">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Function</th>
+              <th>Salary</th>
+              <th class="action">Edit</th>
+              <th class="action">Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="modal-container">
+        <div class="modal">
+          <form>
+            <label for="m-name">Name</label>
+            <input id="m-name" type="text" required />
+    
+            <label for="m-function">Function</label>
+            <input id="m-function" type="text" required />
+    
+            <label for="m-salary">Salary</label>
+            <input id="m-salary" type="number" required />
+            <button id="btnSave">Save</button>
+          </form>
+        </div>
+      </div>
+  
     <script src="script.js"></script>
 </body>
 </html>
